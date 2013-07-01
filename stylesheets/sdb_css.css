@@ -1,0 +1,678 @@
+/**
+ * Sweet Dees Template
+**/
+
+/* ##########################  general  ########################### */
+
+/*
+///////////////////////////////
+////////// General ////////////
+///////////////////////////////
+*/
+
+@font-face{ 
+	font-family: 'CallunaSansRegular-webfont';
+	src: url('../fonts/CallunaSansRegular-webfont .eot');
+	src: url('../fonts/CallunaSansRegular-webfont .eot?iefix') format('eot'),
+	     url('../fonts/CallunaSansRegular-webfont .woff') format('woff'),
+	     url('../fonts/CallunaSansRegular-webfont .ttf') format('truetype'),
+	     url('../fonts/CallunaSansRegular-webfont .svg#webfont') format('svg');
+}
+@font-face {
+    font-family: 'Nevis';
+    src: url("../fonts/nevis.ttf")
+}
+html {
+	margin: 0;
+	padding: 0;
+}
+a, a:link, a:visited {
+	color: #c66c5e;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus {
+	color: #666666;
+}
+img {
+	border: none;
+}
+fieldset {
+	border:solid 1px #ccc;
+}
+body, p, tr, td, button, small, legend, select, fieldset, form, label  {
+	color: #666666;
+	font-family: 'CallunaSansRegular-webfont', verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+}
+h1 {
+	color: #ff3030;
+	font-size: 2.1em;
+	font-weight: normal;
+}
+h2 {
+	color: #ff3030;
+	font-size: 1.9em;
+	font-weight: bold;
+}
+h3 {
+        font-size:1em;
+        font-weight:bold;
+        margin:10px 0;
+	color:#c1b35f;
+	font-family: 'CallunaSansRegular-webfont', verdana, arial, helvetica, sans-serif;
+}
+h4 {
+	color: #c1b35f;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+h5 {
+	font-size: 1.3em;
+	font-weight: normal;
+}
+h6 {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+
+
+/*
+///////////////////////////////
+/////////// Design ////////////
+///////////////////////////////
+*/
+body {
+	color: #a0a0a0;
+	font-family: 'CallunaSansRegular-webfont', verdana, arial, helvetica, sans-serif;
+}
+.body-black {
+	background: url(http://sweetdeescr.com/templates/sweetdees/images/web_bkgd.gif) repeat;
+}
+.body-green {
+	background-color: #012f05;
+}
+.body-yellow {
+	background: url(../images/web_bkgd.gif) repeat;
+}
+.all-black {
+	background: url(../images/bkgd.jpg) repeat-y;
+	margin: 20px auto 0 auto;
+	padding: 0 0 0 0;
+	width: 1024px;
+}
+.all-green {
+	background: url(../images/bg_green.gif) repeat-y;
+	margin: 0px auto 0 auto;
+	padding: 0 0 0 0;
+	width: 950px;
+}
+.all-yellow {
+	background: url(../images/bkgd.jpg) repeat-y;
+	margin: 20px auto 0 auto;
+	padding: 0 0 0 0;
+	width: 1024px;
+}
+/* ##########################  header  ########################### */
+.head {
+	height: 110px;
+	padding: 0px 0 0px 0;
+	width: 1024px;
+	background-color:#eaeaea;
+}
+.logo {
+	float: left;
+	margin: 52px 39px 0 28px;
+}
+
+
+/* ##########################  main  ########################### */
+.main {
+	margin: 0 0 0 0;
+	padding: 0 165px 0 0;
+	width: 859px;
+	background-color:#eaeaea;
+}
+
+/* ++++++++++++++  topmenu  ++++++++++++++ */
+.topmenu {
+	float: left;
+	padding: 0 0 0 0;
+	text-align: right;
+	width: 925px;
+	font-size: 14px;
+    	font-family: 'Nevis',  verdana, arial, helvetica, sans-serif;
+
+}
+
+.topmenu ul {
+	margin: 0;
+	padding: 0;
+
+}
+
+.topmenu ul li {
+  	display: inline; /* Shows each item side-by-side */
+  	list-style-type: none; /* Gets rid of the bullet points */--
+	font-size: 12px;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.topmenu ul li a {
+	margin: 0 0 0 0;
+	padding: 0 1em 0 0 !important;
+}
+.topmenu a {
+	color: #B4B3B2;    /*color for top menu font*/
+}
+.topmenu ul ul li {
+	font-size: 12px;
+	line-height: 1.5em;
+	margin: 0 0 0 15px;
+	padding: 0;
+}
+.topmenu ul ul li a {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0 !important;
+}
+.topmenu .moduletable, .topmenu .moduletable_menu {
+	margin-bottom: 25px !important;
+}
+.topmenu h3 {
+	margin-top: 0px !important;
+	font-size: 12px;
+}
+.topmenu fieldset {
+	border: none;
+}
+
+/* ##########################  navigation column  ########################### */
+.module_content {
+	border:solid 1px #ddd;
+}
+.moduletable_js {
+	border:solid 0px #ddd;
+}
+/* ++++++++++++++  first level  ++++++++++++++ */
+.moduletable-example ul.menu {
+	border:0;
+}
+ul.menu {
+	border:0;
+	list-style-type:none;
+	display: inline;
+}
+.module_content ul.menu {
+	border:0;
+}
+ul.menu li {
+}
+ul.menu li a {
+}
+ul.menu li a:link, ul.menu li a:visited {
+}
+ul.menu li.active a:link, ul.menu li.active a:visited {
+}
+ul.menu li a:hover, ul.menu li a:active, ul.menu li a:focus, ul.menu li.active a:hover, ul.menu li.active a:active, ul.menu li.active a:focus {
+}
+/* ++++++++++++++  second level  ++++++++++++++ */
+ul.menu li ul {
+}
+ul.menu li ul li {
+}
+ul.menu li.active ul li a:link, ul.menu li.active ul li a:visited {
+}
+ul.menu li.active ul li.active a:link,  ul.menu li.active ul li.active a:visited {
+}
+ul.menu li.active ul li a:hover, ul.menu li.active ul li a:active, ul.menu li.active ul li a:focus {
+}
+/* ++++++++++++++  third level  ++++++++++++++ */
+ul.menu li ul li ul {
+}
+ul.menu li.active ul li.active ul li a:link, ul.menu li.active ul li.active ul li a:visited {
+}
+ul.menu li.active ul li.active ul li.active a:link, ul.menu li.active ul li.active ul li.active a:visited {
+}
+/* ++++++++++++++  fourth level  ++++++++++++++ */
+ul.menu li ul li ul li ul {
+}
+ul.menu li.active  ul li.active  ul li.active  ul li  a:link, ul.menu li.active  ul li.active  ul li.active  ul li a:visited  {
+}
+ul.menu li.active  ul li.active  ul li.active  ul li.active  a:link, ul.menu li.active  ul li.active  ul li.active  ul li.active a:visited {
+}
+
+/* ##########################  content  ########################### */
+.content {
+	float: left;
+	width: 900px;
+	text-align: justify;
+	padding: 0 0 0 28px;
+	color:#eaeaea;
+}
+.content ul {
+	margin: 5px 0 5px 0;
+	padding: 0 0 0 5px;
+}
+.content ul li {
+	margin: 0 0 0 10px;
+	padding: 0 0 0 15px;
+}
+.content h2, .content h2 a {
+	color: #95c03d;
+}
+.column-1, .column-2 {
+	border: solid 0px;
+}
+.item-separator {
+	border: solid 0 px #ccc;
+}
+.small {
+	border:solid 0;
+}
+ul#archive-items li {
+	border-bottom:solid 1px #ddd
+}
+.article-info {
+	color:#ccc;
+}
+.article-info dd span {
+    color:#ccc;
+    border-right:solid 0px;
+}
+/* ++++++++++++++  leading  ++++++++++++++ */
+.items-row {
+}
+/* ++++++++++++++++++++ headings +++++++++++++ */
+.items-row h2 {
+	font-weight: normal;
+}
+.items-row h2 {
+}
+.items-row h2 a:link, .items-row h2 a:visited, .items-leading h2 a:link, .items-leading h2 a:visited {
+}
+.items-row h2 a:hover, .items-row h2 a:active, .items-row h2 a:focus, .items-leading h2 a:hover, .items-leading h2 a:active, .items-leading h2 a:focus {
+}
+.items-leading h2 {
+}
+/* ++++++++++++++  readmore  ++++++++++++++ */
+.readmore a:link, .readmore a:visited, a.readmore:link, a.readmore:visited {
+	background: url(../images/arrow_nav.gif) center left no-repeat;
+	color: #ccc;
+	margin: 0 0 0 0 !important;
+	padding: 0 0 0 10px !important;
+	font-weight: normal;
+}
+.readmore a:hover, .readmore a:active, .readmore a:focus, a.readmore a:hover, a.readmore a:active, a.readmore a:focus {
+}
+a.readmore:hover, a.readmore:active, a.readmore:focus {
+	background: url(../images/arrow_nav.gif) center left no-repeat;
+	color: #ccc;
+	margin: 0 0 0 0 !important;
+	padding: 0 0 0 10px !important;
+	font-weight: normal;
+}
+/* ++++++++++++++  icons  ++++++++++++++ */
+.actions {
+	text-align: right;
+	width: 100%;
+}
+.actions img {
+	border:0;
+}
+.actions li { display: inline !important;}
+/* ++++++++++++++  items-more  ++++++++++++++ */
+.items-more h3 {
+}
+.items-more ol {
+}
+.items-more ol li a {
+}
+.items-more ol li a:hover, .items-more ol li a:active, .items-more ol li a:focus {
+}
+/* ++++++++++++++  pagination  ++++++++++++++ */
+.pagination {
+}
+.pagination ul{
+	display: inline;
+}
+.pagination li{
+	display: inline;
+}
+
+/* ++++++++++++++  article index  ++++++++++++++ */
+table.contenttoc {
+	border:solid 3px #ccc;
+}
+
+/* ##########################  foot   ########################### */
+.foot {
+	font-size: 20px;
+	margin: 0 0 0 0;
+	padding: 0;
+	width: 1024px;
+	background-color:#eaeaea;
+}
+.foot-ico {
+	display: inline;
+	height: 21px;
+	text-align: right;
+	vertical-align: middle;
+	width: 22px;
+}
+.foot-menu {
+	color: #a0a0a0;
+	display: inline;	
+	text-align: left;
+	vertical-align: top;
+}
+.foot-menu a {
+	color: #a0a0a0;
+}
+.foot-menu ul {
+	display: inline;
+}
+.foot-menu ul li {
+	display: inline;
+}
+.foot-menu ul, .foot-menu ul li {
+	margin: 0;
+	padding: 0;
+}
+.foot-menu li.active a:link, .foot-menu li.active a:visited {
+	font-weight: normal !important;
+}
+
+.footer {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	color:#40485f;
+	text-align:left;
+	line-height:14px;
+	border: 0;
+	vertical-align:middle;
+}
+
+#footer {
+	width:1024px;
+	height:88px;
+}
+
+
+/* ##########################  breadcrumbs  ########################### */
+/* ##########################  column   ########################### */
+.moduletable {
+	color:#000;
+	border:solid 0px #eee;
+	border-top:0;
+}
+
+/* ##########################  modules  ########################### */
+/* ++++++++++++++  mostread, latest news ++++++++++++++ */
+.mostread li a:link, .mostread li a:visited, .latestnews li a:link, .latestnews li a:visited {
+	background: url(../images/arrow2_grey.png) 2px 7px  no-repeat ;
+}
+.mostread li a:hover, .latestnews li a:hover, .mostread li a:active, .latestnews li a:active, .mostread li a:focus,
+.latestnews li a:focus {
+}
+
+/* ++++++++++++++  newsfeed  ++++++++++++++ */
+ul.newsfeed {
+	border:solid 0px #000;
+}
+.newsfeed-item {
+	border-bottom:solid 1px #ddd;
+}
+.newsfeed-item h5 a {
+}
+
+/* ++++++++++++++  newsflash  ++++++++++++++ */
+/* newsflash horizontal */
+ul.newsflash-horiz {
+	border:solid 1px #eee;
+}
+.newsflash-horiz li {
+	border:solid 0px #eee;
+	background:#f5f5f5;
+}
+ul.newsflash-horiz li h4 {
+    border-bottom:solid 1px #fff;
+}
+/* newsflash vertical */
+.newsflash-vert {
+}
+
+/* ++++++++++++++  banner  ++++++++++++++ */
+.banneritem {
+	border:0
+}
+.banneritem a {
+	background:none
+}
+.banneritem a img {
+	background:none;
+	border:0
+}
+
+/* ++++++++++++++  login  ++++++++++++++ */
+#form-login .inputbox {
+	border:solid 1px #ddd;
+	/* CSS 3 works only in FF and Safari */
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 4px;
+	border-radius:4px;
+}
+.login fieldset, .reset fielset, #user-registration fielset , .registration fielset {
+	border: 0px solid transparent !important;
+}
+fieldset.input {
+	border:0;
+}
+input.button, button.button {
+	border:1px solid #DDDDDD;
+	color:#444444;
+}
+
+/* ++++++++++++++  tabs/ slide  ++++++++++++++ */
+ul.tabs {
+	border:solid 1px #ddd;
+	border-bottom:0;
+}
+ul.tabs li {
+	border-right:solid 1px #ddd
+}
+ul.tabs li a:link, ul.tabs li a:visited {
+	color:#333;
+}
+ul.tabs li a:hover, ul.tabs li a:active, ul.tabs li a:focus {
+	color:#000
+}
+.tabcontent {
+	border:solid 1px #ddd;
+	background:#fff;
+	color:#000;
+}
+.tabcontent .linkclosed {
+	color:#000;
+	border-bottom:solid 1px #e5e5e5;
+}
+ul.tabs li a.linkopen {
+	background:#fff;
+	color:#333;
+	border:0
+}
+ul.tabs li a.linkclosed:hover, ul.tabs li a.linkclosed:active, ul.tabs li a.linkclosed:focus, ul.tabs li a.linkopen:hover, ul.tabs li a.linkopen:active, ul.tabs li a.linkopen:focus {
+	background:#555;
+	color:#fff;
+}
+
+/* ++++++++++++++  category-module  ++++++++++++++ */
+.category-module li {
+	border-bottom:solid 1px #ddd;
+}
+.category-module li li {
+	border:0
+}
+
+/* ##########################  search   ########################### */
+.searchintro img {
+	border:0px
+}
+.word {
+	/*background:#fff;*/
+	border:solid 0px #ccc;
+}
+.word input {
+	background:#fff;
+	border:solid 1px #999;
+	color:#000;
+}
+.only {
+	border:solid 1px #ccc;
+}
+.phrases {
+	border:solid 1px #ccc;
+}
+
+/* ++++++++++++++  selects  ++++++++++++++ */
+.phrases .inputbox {
+	background:#fff;
+	color:#000;
+}
+.phrases .inputbox option {
+	background:#f5f5f5;
+	border-bottom:solid 1px #ccc;
+}
+.phrases .inputbox option a:hover {
+	background:#C00;
+	border-color:#d8d8d8;
+	color:#fff;
+}
+
+/* ++++++++++++++  search results    ++++++++++++++++++ */
+dl.search-results {
+	/*background:#f5f5f5;*/
+}
+dl.search_results dt.result-title {
+	border-top:dotted 1px #ddd;
+	color: #202020;
+}
+dl.search_results dt.result-title a {
+	color: #202020;
+}
+dl.search_results dd.result-created {
+	border-bottom:solid 5px #fff;
+}
+
+/* ##########################  forms   ########################### */
+
+/* ++++++++++++++  form validation  ++++++++++++++ */
+.invalid {
+	border-color:red !important;
+}
+label.invalid {
+	color:red;
+}
+
+/* ##########################  user profile  ########################### */
+#users-profile-core, #users-profile-custom {
+	border:solid 1px #ccc;
+}
+#member-profile fieldset {
+	border:solid 1px #ccc;
+}
+
+/* ##########################  tables   ########################### */
+table {
+
+}
+tbody {
+}
+tr.odd, .cat-list-row1 {
+}
+table.newsfeeds td, table.weblinks td {
+}
+table.weblinks th, table.newsfeeds th, table.category th, table.jlist-table th {
+	background:#444;
+	color:#fff;
+}
+table.weblinks th a, table.newsfeeds th a, table.category th a, table.jlist-table th a {
+	color:#fff !important;
+}
+td.table_footer {
+}
+td.counter {
+}
+td.num, td.hits {
+}
+td p {
+}
+table.category th a img {
+	border:solid 0px;
+}
+
+fieldset.filters {
+	border:0;
+}
+
+/* ##########################  contacts   ########################### */
+.contact form {
+	background:#fff;
+	color:#000;
+}
+.contact input {
+	background:#fff;
+	color:#000;
+}
+.contact input.invalid, .contact textarea.invalid {
+	border:solid 2px red;
+}
+.contact label.invalid {
+	color:red;
+}
+
+/* ++++++++++++++  Error Message contact form  ++++++++++++++ */
+p.error {
+    color:#800000;
+    background:#eee;
+    border-top:3px solid #800000;
+    border-bottom:3px solid #800000;
+}
+body.contentpane {
+    background:#fff;
+}
+
+/* ##########################  footer   ########################### */
+
+/* ##########################  editor  ########################### */
+.contentpaneopen_edit img {
+	border:0;
+}
+form.editor fieldset {
+	border:solid 1px #ccc;
+}
+
+/* ++++++++++++++  edit  ++++++++++++++ */
+form#adminForm {
+	border:solid 0px #000;
+}
+form#adminForm fieldset {
+	border:solid 1px #ddd;
+}
+legend {
+	font-weight:bold;
+}
+
+/* ++++++++++++++  tooltip  ++++++++++++++ */
+.tip {
+	border:solid 1px #333;
+    background:#ffffcc;
+}
+
+table.pagenav, table.pagenav tr, table.pagenav td {
+	border:0 !important;
+}
+.categories-list ul {
+	list-style-type:none;
+}

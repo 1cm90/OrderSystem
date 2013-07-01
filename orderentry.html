@@ -1,0 +1,115 @@
+<!DOCTYbPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/sdb_css.css">
+    <title>Sweet Dee's Order System</title>
+  </head>
+  <body class="body-black">
+    <div align="center">
+      <div class="all-black">
+        <div class="head">
+          <div class="logo">
+            <a href="/" alt="Sweet Dee's"><img src=
+            "http://sweetdeescr.com/templates/sweetdees/images/logo.png" alt="" /></a>
+          </div>  <!-- end div logo -->
+          <div style="clear: both;"></div>
+        </div> <!-- end div head -->
+        <div class="main">
+          <div class="content">
+            <div class="error">
+              <div style=" float:left; width: 860px;">
+                <div class="moduletable">
+                  <!--      <h3>News Flash</h3> -->
+                  <div class="newsflash">
+                    <h4 class="newsflash-title">
+                      Enter An Order
+                    </h4>
+
+		    <form action="/sign?order_name={{ order_name }}" method="post">
+                      <p>
+                        <label><b>Apple</b>
+                          <input type="radio" name="AppleQuantity" value="2" id="Orders_0" />
+                          2</label>  <label>
+                          <input type="radio" name="AppleQuantity" value="4" id="Orders_0" />
+                          4</label>
+                          <label>
+                          <input type="radio" name="AppleQuantity" value="6" id="Orders_0" />
+                          6</label>
+                          <input type="radio" name="AppleQuantity" value="8" id="Orders_0" />
+                          8</label>
+                        <br />
+                        <label>
+                          <input type="checkbox" name="Extras" value="caramel" id="Orders_0" />
+                              Caramel Sauce</label><br />
+                        <label>
+                          <input type="checkbox" name="Extras" value="chocolate" id="Orders_0" />
+                              Chocolate Sauce</label><br />
+                        <label>
+                          <input type="checkbox" name="Extras" value="powdered" id="Orders_0" />
+                              Powdered Sugar</label><br />
+                        <label>
+                          <input type="checkbox" name="Extras" value="whip" id="Orders_0" />
+                              Whipped Cream</label>
+                      </p>
+		       Additional Instructions:
+		      <div><textarea name="content" rows="3" cols="60"></textarea></div>
+		       <br/> Customer Name: 
+		      <div><textarea name="customer_name" rows="1" cols="20"></textarea></div> <br/>
+		      <div><input type="Submit" value="Enter Order"></div>
+		    </form>
+                  </div> <!-- end div newsflash -->
+                </div> <!-- end div moduletable -->
+              </div> <!-- end div float -->
+            </div> <!-- end div error -->
+          </div> <!-- end div content -->
+          <div style="clear: both;"></div>
+        </div> <!-- end div main -->
+        <div class="foot">
+          <div class="foot-ico"></div>
+          <div id="footer">
+            <table width="1024" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="393" height="88">
+                  <img src=
+                  "http://sweetdeescr.com/templates/sweetdees/images/f_left_lines.png"
+                  width="393" height="88" alt="left lines" style="display:block" />
+                </td>
+                <td width="100" height="88">
+                  <a href="http://www.sweetdeescr.com"><img src=
+                  "http://sweetdeescr.com/templates/sweetdees/images/f_logo.png" alt=
+                  "SDB" width="100" height="88" border="0" style="display:block" /></a>
+                </td>
+                <td width="328" height="88" class="footer">
+                  &#169; <strong>2012-2013 SWEET DEE'S BEIGNETS</strong><br />
+                  Cedar Rapids, Iowa | www.sweetdeescr.com<br />
+                  <i>Design by <a href="http://ironleafpress.com">Iron Leaf Press</a></i>
+                </td>
+                <td width="48" height="88">
+                  <a href="https://twitter.com/sweetdeescr" target="_blank"><img src=
+                  "http://sweetdeescr.com/templates/sweetdees/images/f_twitter.png" alt=
+                  "Twitter" width="48" height="88" border="0" style=
+                  "display:block" /></a>
+                </td>
+                <td width="49" height="88">
+                  <a href="http://www.facebook.com/sweetdeescr" target="_blank"><img src=
+                  "http://sweetdeescr.com/templates/sweetdees/images/f_footer.png" alt=
+                  "Facebook" width="49" height="88" border="0" style=
+                  "display:block" /></a>
+                </td>
+                <td width="106" height="88">
+                  <img src=
+                  "http://sweetdeescr.com/templates/sweetdees/images/f_right_lines.png"
+                  width="106" height="88" alt="right lines" style="display:block" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <br />
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div><!-- end footer -->
+      </div> <!-- all black -->
+    </div>
+  </body>
+</html>
