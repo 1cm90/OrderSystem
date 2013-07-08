@@ -15,3 +15,10 @@ indexes:
   properties:
   - name: date
     direction: desc
+
+- kind: Order
+  ancestor: yes
+  properties:
+  - name: fulfilled
+  - name: date
+    direction: desc

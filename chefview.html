@@ -28,8 +28,11 @@
 
                     {% for order in orders %}
                       Order For <b>{{ order.customer }}</b>: 
+                      <form action="/fulfilOrder?order={{ order.url_string }}" method="post">
                       <blockquote>{{ order.beignet_order }}</blockquote>
                       <blockquote>{{ order.content }}</blockquote>
+		      <blockquote><input type="Submit" value="Order Done"></blockquote>
+                      </form>
                     {% endfor %}  
 
                   </div> <!-- end div newsflash -->

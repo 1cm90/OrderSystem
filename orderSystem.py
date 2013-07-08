@@ -20,11 +20,12 @@ def datastore_key(data_store_name=DEFAULT_DATASTORE_NAME):
 
 # order class holds an order
 class Order(ndb.Model):
-    author = ndb.UserProperty()
     beignet_order = ndb.StringProperty(indexed=False)
     content = ndb.StringProperty(indexed=False)
     customer = ndb.StringProperty(indexed=False)
     date = ndb.DateTimeProperty(auto_now_add=True)
+    fulfilled = ndb.BooleanProperty()
+    url_string = ndb.StringProperty(indexed=False)
 
 # handler for the main page (homepage)
 class MainPage(webapp2.RequestHandler):
@@ -41,12 +42,11 @@ class OrderEntryPage(webapp2.RequestHandler):
 # handler for the page used by the kitchen to fill orders
 class ChefViewPage(webapp2.RequestHandler):
     def get(self):
-	
         data_store_name = self.request.get('data_store_name',
                                           DEFAULT_DATASTORE_NAME)
 
         order_query = Order.query(
-            ancestor=datastore_key(data_store_name)).order(-Order.date)
+            ancestor=datastore_key(data_store_name)).filter(Order.fulfilled == False).order(-Order.date)
         orders = order_query.fetch(10)
 
         if users.get_current_user():
@@ -76,20 +76,39 @@ class OrderInput(webapp2.RequestHandler):
 	# fill order with data from form
         order.content = self.request.get('content')
         order.customer = self.request.get('customer_name')
-	order.beignet_order = self.request.get('AppleQuantity') + " Apple"
-	
+	order.beignet_order = self.request.get('AppleQuantity') + " Beignets"
+	order.fulfilled = False
         orderExtras = self.request.get_all('Extras')
         for extra in orderExtras:
             order.beignet_order = order.beignet_order + " +" + extra
+        order_key = order.put()
+        order.url_string = order_key.urlsafe()
         order.put()
-
         query_params = {'data_store_name': data_store_name}
-        self.redirect('/?' + urllib.urlencode(query_params))
+        self.redirect('/orderEntry')
 
+class FulfillOrder(webapp2.RequestHandler):
+    def post(self):
+        key_string = self.request.get('order')
+        order_key = ndb.Key(urlsafe=key_string)
+        order = order_key.get()
+        order.fulfilled = True
+        order.put()
+        data_store_name = self.request.get('data_store_name',
+                                          DEFAULT_DATASTORE_NAME)
+        query_params = {'data_store_name': data_store_name}
+        self.redirect('/chefView')
+
+class ResetOrders(webapp2.RequestHandler):
+    def get(self):
+        ndb.delete_multi(Order.query().fetch(999999, keys_only=True))
+        self.redirect('/?')
 
 application = webapp2.WSGIApplication([
     ('/', MainPage),
     ('/orderEntry', OrderEntryPage),
     ('/chefView', ChefViewPage),
     ('/sign', OrderInput),
+    ('/fulfilOrder', FulfillOrder),
+    ('/resetOrders', ResetOrders),
 ], debug=True)
